@@ -1,0 +1,44 @@
+[
+  {
+    "UserName": "michael.lawson@reqres.in",
+    "email": "michael.lawson@reqres.in",
+    "first_name": "Michael",
+    "last_name": "Lawson",
+    "avatar": "https://reqres.in/img/faces/7-image.jpg"
+  },
+  {
+    "UserName": "lindsay.ferguson@reqres.in",
+    "email": "lindsay.ferguson@reqres.in",
+    "first_name": "Lindsay",
+    "last_name": "Ferguson",
+    "avatar": "https://reqres.in/img/faces/8-image.jpg"
+  },
+  {
+    "UserName": "tobias.funke@reqres.in",
+    "email": "tobias.funke@reqres.in",
+    "first_name": "Tobias",
+    "last_name": "Funke",
+    "avatar": "https://reqres.in/img/faces/9-image.jpg"
+  },
+  {
+    "UserName": "byron.fields@reqres.in",
+    "email": "byron.fields@reqres.in",
+    "first_name": "Byron",
+    "last_name": "Fields",
+    "avatar": "https://reqres.in/img/faces/10-image.jpg"
+  },
+  {
+    "UserName": "george.edwards@reqres.in",
+    "email": "george.edwards@reqres.in",
+    "first_name": "George",
+    "last_name": "Edwards",
+    "avatar": "https://reqres.in/img/faces/11-image.jpg"
+  },
+  {
+    "UserName": "rachel.howell@reqres.in",
+    "email": "rachel.howell@reqres.in",
+    "first_name": "Rachel",
+    "last_name": "Howell",
+    "avatar": "https://reqres.in/img/faces/12-image.jpg"
+  }
+]
