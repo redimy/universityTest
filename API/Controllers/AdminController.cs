@@ -28,6 +28,8 @@ namespace API.Controllers
                 {
                     u.Id,
                     Username = u.UserName,
+                    first_name = u.first_name,
+                    last_name = u.last_name,
                     Roles = u.UserRoles.Select(r => r.Role.Name).ToList()
                 })
                 .ToListAsync();

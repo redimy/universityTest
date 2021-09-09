@@ -1,0 +1,16 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Group Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let assignment of assignments">
+        <td>{{ assignment.id }}</td>
+        <td>{{ assignment.name }}</td>
+        <td>{{ assignment.groupId }}</td>
+      </tr>
+    </tbody>
+  </table>

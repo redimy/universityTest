@@ -1,0 +1,18 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Result</th>
+        <th scope="col">Assignment Id</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let grade of grades">
+        <td>{{ grade.id }}</td>
+        <td>{{ grade.name }}</td>
+        <td>{{ grade.value }}</td>
+        <td>{{ grade.assignmentId }}</td>
+      </tr>
+    </tbody>
+  </table>

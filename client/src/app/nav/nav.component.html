@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/" routerLinkActive='active'>University</a>
+
+    <ul class="navbar-nav me-auto mb-2 mb-md-0" *ngIf="accountService.currentUser$ | async">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin" routerLinkActive='active'>Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"routerLink="/groups" routerLinkActive='active'>Groups</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"routerLink="/assignments" routerLinkActive='active'>Assignments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"routerLink="/grades" routerLinkActive='active'>Grades</a>
+      </li>
+    </ul>
+
+    <a class="text-light" *ngIf="accountService.currentUser$ | async">Welcome User</a><br />
+    <ul class="navbar-nav" *ngIf="accountService.currentUser$ | async">
+      <li class="nav-item">
+        <button type="button" class="btn btn-danger" (click)="logout()">
+          Logout
+        </button>
+      </li>
+    </ul>
+
+    <form
+      *ngIf="!(accountService.currentUser$ | async)"
+      #loginForm="ngForm"
+      class="d-flex"
+      (ngSubmit)="login()"
+      autocomplete="off"
+    >
+      <input
+        name="username"
+        [(ngModel)]="model.username"
+        class="form-control me-2"
+        type="text"
+        placeholder="Username"
+      />
+      <input
+        name="password"
+        [(ngModel)]="model.password"
+        class="form-control me-2"
+        type="password"
+        placeholder="Password"
+      />
+      <button class="btn btn-outline-success" type="submit">Login</button>
+    </form>
+  </div>
+</nav>
